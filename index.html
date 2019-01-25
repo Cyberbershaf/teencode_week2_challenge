@@ -22,49 +22,49 @@
   <form id="survey-form">
 	<table>
 		<tr>
-		  <td>
+		  <td class="left-column">
 			<label for="name" id="name-label">
 			  NAME: 
 			</label>
 		  </td>
 			
-		  <td>
+		  <td class="right-column">
 			<input type="text" name="name" id="name" placeholder="Enter your name..." required>
 		  </td>
 		</tr>
 		
 		<tr>
-		  <td>
+		  <td class="left-column">
 			<label for="email" id="email-label">
 			  EMAIL: 
 			</label>
 		  </td>
 			
-		  <td>
+		  <td class="right-column">
 		    <input type="email" name="email" id="email" placeholder="Enter email address..." required>
 		  </td>
 		</tr>
 		
 		<tr>
-		  <td>
+		  <td class="left-column">
 		    <label for="age" id="number-label">
 			  AGE: 
 			</label>
 		  </td>
 			
-		  <td>
+		  <td class="right-column">
 		    <input type="number" name="age" id="number" placeholder="Age..." min="1" max="125" required>
 		  </td>
 		</tr>
 		
 		<tr>
-		  <td>
+		  <td class="left-column">
 		    <label for="role">
 			  Which option best describes your current role? 
 			</label>
 		  </td>
 			
-		  <td>
+		  <td class="right-column">
 		    <select id="dropdown" name="roles">
               <option value="select">
 			    Select an option
@@ -89,29 +89,29 @@
 		</tr>
 		
 		<tr>
-		  <td>
+		  <td class="left-column">
 		    <label for="rate">
 			  How likely is that you would recommend freeCodeCamp to a friend? 
 			</label>
 		  </td>
 		  
-		  <td>
+		  <td class="right-column">
 		    <ul>
               <li>
 			    <label>
-				  Definitely <input name="radio-btn" value="1"  type="radio">
+				  <input name="radio-btn" value="1"  type="radio">Definitely 
 				</label>
 			  </li>
 			  
               <li>
 			    <label>
-				  Maybe <input name="radio-btn" value="2"  type="radio">
+				   <input name="radio-btn" value="2"  type="radio">Maybe
 				</label>
 			  </li>
 			  
               <li>
 			    <label> 
-				  Not sure<input name="radio-btn" value="3"  type="radio">
+				  <input name="radio-btn" value="3"  type="radio">Not sure
 				</label>
 			  </li>
             </ul>
@@ -119,13 +119,13 @@
 		</tr>
 		
 		<tr>
-		  <td>
+		  <td class="left-column">
 		    <label for="mostlikes">
 			  What do you like most in FCC:
 			</label>
 		  </td>
 			
-		  <td>
+		  <td class="right-column">
 		    <select id="dropdown2" name="mostlikes">
               <option value="select2">
 			    Select an option
@@ -150,18 +150,18 @@
 		</tr>
 		
 		<tr>
-		  <td>
+		  <td class="left-column">
 		    <label for="prefered">
 			  Things that should be improved in the future<br>(Check all that apply): 
 			</label>
 		  </td>
 		    
-		  <td>
+		  <td class="right-column">
 		    <ul id="prefered">
               <li>
-			    <label>
-				  <input name="prefer" value="1" type="checkbox">Front-end Projects
-				</label>
+			  <label>
+				<input name="prefer" value="1" type="checkbox">Front-end Projects
+			  </label>
 			  </li>
 			  
               <li>
@@ -198,20 +198,24 @@
 		</tr>
 		
 		<tr>
-		  <td>
+		  <td class="left-column">
 		    <label for="comments">
 			  Any Comments or Suggestions?
 			</label>
 		  </td>
 		  
-		  <td>
-		    <textarea placeholder="Enter your message here..." name="comments" id="comments">
+		  <td class="right-column">
+		    <textarea placeholder="Enter your message here..." name="comments" id="comments" min="2" max="1000">
 			</textarea>
 		  </td>
 		</tr>
 	</table>
 	
-	<button>SUBMIT</button>
+	<div id="btn-wrapper">
+	  <button id="submit-btn">
+	    SUBMIT
+	  </button>
+	</div>
   </form>
   
 </body>
